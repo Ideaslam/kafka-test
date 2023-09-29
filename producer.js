@@ -15,7 +15,7 @@ producer.on('ready', function () {
   // Send the message to Kafka
   setInterval(() => {
     var payloads = [
-      { topic: 'VehicleRegistration', messages: new Date().toString() , partition: 0 }, 
+      { topic: 'ISLAM_JS_TEST', messages: new Date().toString() , partition: 0 }, 
     ];
     producer.send(payloads, function (err, data) { 
       

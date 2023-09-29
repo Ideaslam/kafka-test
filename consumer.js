@@ -11,7 +11,7 @@ const consumer = new kafka.Consumer(
   client,
   [
     {
-      topic: 'VehicleRegistration_response', // Replace with the name of the Kafka topic you want to consume from
+      topic: 'ISLAM_JS_TEST', // Replace with the name of the Kafka topic you want to consume from
       partition: 0, // Partition number, 0 by default
       offset: 0 // Offset to start consuming from, 0 by default
     } 

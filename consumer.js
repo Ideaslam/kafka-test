@@ -1,7 +1,7 @@
 const kafka = require('kafka-node');
 
 // Kafka server configuration
-const kafkaHost = '8.213.27.163:9092'; // Replace with your Kafka server host and port
+const kafkaHost = '172.28.32.226:9092'; // Replace with your Kafka server host and port
 
 // Create a Kafka client
 const client = new kafka.KafkaClient({ kafkaHost });

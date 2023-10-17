@@ -1,7 +1,7 @@
 const kafka = require('kafka-node');
 
 // Kafka server configuration
-const kafkaHost = '8.213.28.180:9092'; // Replace with your Kafka server host and port 
+const kafkaHost = '8.213.27.163:9092'; // Replace with your Kafka server host and port 
 const client = new kafka.KafkaClient({ kafkaHost }); 
 const producer = new kafka.Producer(client);
 
@@ -21,7 +21,7 @@ producer.on('ready', function () {
       
       console.error(err);
     });
-  }, 10000); 
+  }, 1000); 
 });
 
 // Handle producer error event

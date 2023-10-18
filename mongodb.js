@@ -34,6 +34,7 @@ app.use(bodyParser.urlencoded({
 app.get("/locations", async function (req, res) { 
     console.log('in');
     var data = await   Location.find().limit(20) ; 
+    console.log(data); 
     res.send(data) ; 
     // location.find({projectName: 'name'}).sort({viewCount: -1}).limit(5).exec( 
     //     function(err, locations) {

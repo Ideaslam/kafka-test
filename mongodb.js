@@ -29,9 +29,11 @@ app.use(bodyParser.urlencoded({
   
  
   
-var data = await   Location.find().limit(20) ; 
+async function show (){
+    var data = await   Location.find().limit(20) ; 
 console.log(data); 
-  
+} ; 
+  show () ; 
 app.get("/locations", async function (req, res) { 
     console.log('in');
     var data = await   Location.find().limit(20) ; 

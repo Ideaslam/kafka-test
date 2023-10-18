@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
   
 
 var dev ="mongodb+srv://ghazeer:mNiWElpgunhEs31i@cluster0.lj3mcoj.mongodb.net/db_dev";
-var production ="mongodb+srv://ghazeer:ITvnOSSB8g2xKn9Lq17@172.28.32.223/ghazeer";
+var production ="mongodb://172.28.32.223:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.1";
 mongoose.connect(production, { 
   useNewUrlParser: true, 
   useUnifiedTopology: true
